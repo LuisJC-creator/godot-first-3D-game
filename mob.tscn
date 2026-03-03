@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://defdm2qdva75q"]
+
+[ext_resource type="PackedScene" uid="uid://bicorb7we351t" path="res://art/mob.glb" id="1_dy6sc"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nokgg"]
+size = Vector3(2.374298, 1, 3.2924461)
+
+[node name="Mob" type="CharacterBody3D" unique_id=1686969308]
+
+[node name="Pivot" type="Node3D" parent="." unique_id=1991247296]
+
+[node name="mob" parent="." unique_id=774772056 instance=ExtResource("1_dy6sc")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1920929e-07, 0.08544707, -0.31411695)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1718749950]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.025336385, 0.41996777, -0.052867413)
+shape = SubResource("BoxShape3D_nokgg")
