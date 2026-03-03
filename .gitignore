@@ -1,0 +1,7 @@
+.godot/
+*.uid
+.mono/
+.import/
+bin/
+obj/
+*.csproj.user
